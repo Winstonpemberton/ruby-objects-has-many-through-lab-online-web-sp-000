@@ -1,4 +1,4 @@
-class Genre 
+class Genre
   attr_accessor :name
   @@all = []
 
@@ -7,7 +7,7 @@ class Genre
     @@all << self
   end
 
-  def self.all 
+  def self.all
     @@all
   end
 end
