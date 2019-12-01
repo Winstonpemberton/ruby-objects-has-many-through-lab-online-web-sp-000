@@ -21,4 +21,10 @@ class Artist
     Song.new(name,self,genre)
   end
 
+  def genres
+    Songs.all.collect do |song|
+      song.genre
+    end
+  end
+
 end
