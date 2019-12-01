@@ -11,5 +11,11 @@ class Artist
     @@all
   end
 
+  def songs 
+    Song.all.collect do |song|
+      song.artist == self
+    end
+  end
+
 
 end
